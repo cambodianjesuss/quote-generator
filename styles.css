@@ -73,6 +73,10 @@ body {
     box-shadow: 0 0.1rem rgba(250, 250, 250, 0.35);
   }
 
+  .twitter-button:hover {
+    color: #38A1F3;
+  }
+
   /* Tablet or Smaller */
   @media screen and (max-width: 1000px){
     .quote-container {
