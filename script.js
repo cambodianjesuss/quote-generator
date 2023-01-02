@@ -19,7 +19,7 @@ const newQuote = () => {
   }
 
   // Change font size if quote is too long
-  if(quote.text.length > 50) {
+  if(quote.text.length > 120) {
     quoteText.classList.add('long-quote');
   } else {
     quoteText.classList.remove('long-quote');
