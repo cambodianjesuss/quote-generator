@@ -1,2 +1,3 @@
 # quote-generator
-Simply Quote Generator App
+Simple Quote Generator App with Tweet Functionality
+
