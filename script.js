@@ -30,7 +30,6 @@ const newQuote = () => {
 
 const getQuotes = async () => {
   const apiUrl = "https://jacintodesign.github.io/quotes-api/data/quotes.json";
-  
   try { 
     const response = await fetch(apiUrl)
     apiQuotes = await response.json();
@@ -39,5 +38,14 @@ const getQuotes = async () => {
     console.error(error);
   }
 }
+
+const tweetQuote = () => {
+  const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${authorText.textContent}`;
+  window.open(twitterUrl, '_blank');
+}
+
+// Event Listeners
+newQuoteBtn.addEventListener('click', newQuote);
+twitterBtn.addEventListener('click', tweetQuote)
 
 getQuotes();
